@@ -10,6 +10,7 @@ ___extended fastAPI server___
  - docs
  - ai support
  - spec
+ - tests
 
 #### open features:
  - openAPI 3.0.2 compliant
