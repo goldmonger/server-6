@@ -4,13 +4,12 @@ ___extended fastAPI server___
 
 #### benchmark features
  - auth
- - ds
+ - ds design
  - routing
  - integrations
- - docs
+ - doc support
  - ai support
- - spec
- - tests
+ - test support
 
 #### open features:
  - openAPI 3.0.2 compliant
