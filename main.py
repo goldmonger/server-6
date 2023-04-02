@@ -1,44 +1,51 @@
 from fastapi import FastAPI
 import os
-import sqlalchemy
+import sys
 
 
+# import from dir is too complex
+cwd = os.getcwd()
+
+# Insert the path of modules folder
+sys.path.insert(0, cwd + "\\ds")
+
+# get data source from aero
+from aero import DataSource
+
+# reset terminal
 os.system("cls")
-# print("sql alchemy version:", sqlalchemy.__version__)
-# ds_engine = sqlalchemy.create_engine("mysql+mysqlconnector://server:donut@localhost:25060/7s", echo=True)
-ds_engine = sqlalchemy.create_engine("mysql+mysqlconnector://server:donut@localhost:25060/7s")
 
+# init ds
+ds = DataSource()
+
+# intit app
 app = FastAPI()
-
-
-# include mysql ds
+ds.say_this("hello aero")
 
 # create Entities for auth
-
 # include auth
-
-with ds_engine.connect() as ds:
-    result = ds.execute(sqlalchemy.text("select 'hello world'"))
-    print()
 
 
 # basic routing
-# root 
+# root
 @app.get("/")
 async def root():
     return {"message": "index"}
 
-# sessions 
+
+# sessions
 @app.get("/sessions")
 async def root():
     return {"message": "sessions"}
 
-# users 
+
+# users
 @app.get("/users")
 async def root():
     return {"message": "users"}
 
-# accounts 
+
+# accounts
 @app.get("/accounts")
 async def root():
     return {"message": "accounts"}
