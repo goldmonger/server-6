@@ -2,15 +2,11 @@ from fastapi import FastAPI
 import os
 import sys
 
+# add path to module finder
+sys.path.insert(0, os.getcwd() + "\\lib")
 
-# import from dir is too complex
-cwd = os.getcwd()
-
-# Insert the path of modules folder
-sys.path.insert(0, cwd + "\\ds")
-
-# get data source from aero
-from aero import DataSource
+# import custom module
+from ds import DataSource
 
 # reset terminal
 os.system("cls")
@@ -22,9 +18,8 @@ ds = DataSource()
 app = FastAPI()
 ds.say_this("hello aero")
 
-# create Entities for auth
-# include auth
-
+# make entities dynamic
+# build auth
 
 # basic routing
 # root
