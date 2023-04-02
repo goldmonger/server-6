@@ -2,7 +2,7 @@
 
 ___extended fastAPI server___ 
 
-#### benchmark features
+#### benchmark/testing features
  - auth
  - ds design
  - routing
@@ -15,4 +15,5 @@ ___extended fastAPI server___
  - openAPI 3.0.2 compliant
  - decorations
  - 1 layer abstraction
+ - python dominant
 
