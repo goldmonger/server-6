@@ -1,6 +1,9 @@
 import sys
 import os
+
 sys.path.insert(0, os.getcwd() + "\\lib")
+
+# app imports
 from fastapi import FastAPI
 from ds import DataSource
 from routes import Routes
@@ -20,3 +23,6 @@ class Aero:
         self.app = FastAPI()
 
         Routes(self.app)
+
+
+launch = Aero()

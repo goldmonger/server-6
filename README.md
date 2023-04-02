@@ -27,3 +27,13 @@ ___extended fastAPI server___
  - 1 layer abstraction
  - python dominant
 
+
+#### run
+
+w/ clear console watch  
+`uvicorn aero:launch --reload`
+
+wo/ clear console watch  
+`...`
+
+
