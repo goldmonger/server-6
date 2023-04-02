@@ -2,6 +2,16 @@
 
 ___extended fastAPI server___ 
 
+##### pros:  
+ - fast set-up
+ - auto docs
+ 
+ 
+##### cons:  
+ - indentation rules
+ - annoying import
+
+
 #### benchmark/testing features
  - auth
  - ds design
