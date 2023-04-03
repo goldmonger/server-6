@@ -12,7 +12,7 @@ ___extended fastAPI server___
  - annoying import
 
 
-#### benchmark - testing:
+#### benchmark testing:
  - auth
  - ds design
  - routing
