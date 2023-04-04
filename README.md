@@ -12,7 +12,7 @@ ___extended fastAPI server___
  - ___pls change import call structure___
 
 
-#### benchmark testing:
+#### benchmark for testing:
  - auth
  - ds design
  - routing
